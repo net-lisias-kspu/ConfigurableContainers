@@ -7,9 +7,11 @@
 
 using System.Linq;
 using System.Collections.Generic;
-using UnityEngine;
 
-namespace AT_Utils
+using UnityEngine;
+using AT_Utils;
+
+namespace ConfigurableContainers
 {
     /// <summary>
     /// This is a different approach than in ModularFuelTanks, more suitable for "cargo" resources than fuels:

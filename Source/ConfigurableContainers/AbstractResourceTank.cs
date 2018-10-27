@@ -6,8 +6,9 @@
 //  Copyright (c) 2016 Allis Tauri
 
 using UnityEngine;
+using AT_Utils;
 
-namespace AT_Utils
+namespace ConfigurableContainers
 {
     public abstract class AbstractResourceTank : SerializableFiledsPartModule, IPartCostModifier, IPartMassModifier, IModuleInfo
     {

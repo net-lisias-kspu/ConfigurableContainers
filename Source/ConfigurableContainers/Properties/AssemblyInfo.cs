@@ -1,4 +1,4 @@
-//   AssemblyInfo.cs
+﻿//   AssemblyInfo.cs
 //
 //  Author:
 //       Allis Tauri <allista@gmail.com>
@@ -38,7 +38,7 @@ using System.Reflection;
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyFile("")]
 
-//namespace AT_Utils
+//namespace ConfigurableContainers
 //{
 //    public class CCModInfo : KSP_AVC_Info
 //    {

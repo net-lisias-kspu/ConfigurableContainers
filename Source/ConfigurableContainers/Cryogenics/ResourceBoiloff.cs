@@ -8,7 +8,9 @@
 using System;
 using UnityEngine;
 
-namespace AT_Utils
+using AT_Utils;
+
+namespace ConfigurableContainers
 {
     public class ResourceBoiloff : ConfigNodeObject
     {
