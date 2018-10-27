@@ -73,9 +73,18 @@
     <Compile Include="Cryogenics\CryogenicsParams.cs" />
     <Compile Include="Cryogenics\ResourceBoiloff.cs" />
     <Compile Include="Cryogenics\ActiveCooling.cs" />
+    <Compile Include="Properties\Version.cs">
+      <DependentUpon>Version.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Cryogenics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Version.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Version.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 </Project>
