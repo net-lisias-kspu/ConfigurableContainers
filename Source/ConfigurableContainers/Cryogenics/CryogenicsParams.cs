@@ -8,7 +8,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace AT_Utils
+using AT_Utils;
+
+namespace ConfigurableContainers
 {
     public class CryogenicsParams : ConfigNodeObject
     {

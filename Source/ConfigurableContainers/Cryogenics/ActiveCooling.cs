@@ -7,7 +7,9 @@
 
 using System;
 
-namespace AT_Utils
+using AT_Utils;
+
+namespace ConfigurableContainers
 {
     public class ActiveCooling : ResourceBoiloff
     {
