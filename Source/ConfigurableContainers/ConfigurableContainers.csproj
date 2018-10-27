@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD074812-7105-46D7-A252-53C20DAB698B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <BaseIntermediateOutputPath>..\..\obj\ConfigurableContainers</BaseIntermediateOutputPath>
+    <RootNamespace>AT_Utils</RootNamespace>
+    <AssemblyName>ConfigurableContainers</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_PROFILER;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\KSP-test\KSP_test_1.4.5\KSP_Data\Managed\System.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\KSP-test\KSP_test_1.4.5\KSP_Data\Managed\System.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>..\..\KSP-test\KSP_test_1.4.5\KSP_Data\Managed\System.Xml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AnisotropicPartResizer">
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\AnisotropicPartResizer.dll</HintPath>
+    </Reference>
+    <Reference Include="AT_Utils">
+      <HintPath>..\..\..\..\..\..\..\LIB\plugins\AT_Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="KSPAssets">
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\KSPAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SwitchableTankManager.cs" />
+    <Compile Include="SwitchableTankType.cs" />
+    <Compile Include="ModuleTankManager.cs" />
+    <Compile Include="ModuleSwitchableTank.cs" />
+    <Compile Include="VolumeConfiguration.cs" />
+    <Compile Include="AbstractResourceTank.cs" />
+    <Compile Include="VolumeConfigsLibrary.cs" />
+    <Compile Include="SwitchableTankManagerGUI.cs" />
+    <Compile Include="Cryogenics\CryogenicsParams.cs" />
+    <Compile Include="Cryogenics\ResourceBoiloff.cs" />
+    <Compile Include="Cryogenics\ActiveCooling.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Cryogenics\" />
+  </ItemGroup>
+</Project>

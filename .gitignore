@@ -1,9 +1,12 @@
-﻿#should it start with a comment?
-*~
-*.mdb
-*.dll
-.idea
-obj
-Releases
-Screenshots
-/GameData/ConfigurableContainers/VolumeConfigs.user
+/bin
+**/obj
+/*.user
+.vs
+Archive
+GameData/*/LICENSE
+GameData/*/NOTICE
+GameData/*/README.md
+GameData/*/CHANGE_LOG.md
+GameData/*/*.version
+GameData/*/*.dll
+Source/**/Version.cs
