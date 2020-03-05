@@ -1,4 +1,5 @@
-﻿*~
-*.mdb
-*.dll
-obj/**
+.vs
+bin
+obj
+GameData/**
+Source/**
