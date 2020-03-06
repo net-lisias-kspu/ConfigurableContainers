@@ -609,6 +609,14 @@ namespace ConfigurableContainers
                 scale = abs_scale;
             if(!scale.Equals(1))
                 SetVolume(Volume*scale*scale*scale);
+
+            // send Resource Changed message to KSP Recall if needed
+            if (0 != this.part.Resources.Count) //FIXME: There`s a chance that Configurable Containers would have a Zero Resource List?
+            {
+                BaseEventDetails edata = new BaseEventDetails(BaseEventDetails.Sender.USER);
+                edata.Set<int>("InstanceID", this.part.GetInstanceID());
+                part.SendEvent("OnPartResourceChanged", edata, 0);
+            }
         }
 
         [KSPEvent(guiActive=true, guiName = "Disable Cooling", active = false)]
